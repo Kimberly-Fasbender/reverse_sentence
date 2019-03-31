@@ -13,9 +13,7 @@ def reverse_sentence(my_sentence)
     if my_sentence[end_index] == " " || end_index == length - 1
       temp_index = end_index
       temp_index = end_index - 1 if my_sentence[end_index] == " "
-
       reverse_string(start_index, temp_index, my_sentence)
-
       start_index = end_index + 1
     end
     end_index += 1
@@ -27,8 +25,6 @@ def reverse_sentence(my_sentence)
 end
 
 def reverse_string(start_index, end_index, my_sentence)
-  storage = ""
-
   while start_index < end_index
     storage = my_sentence[start_index]
     my_sentence[start_index] = my_sentence[end_index]
