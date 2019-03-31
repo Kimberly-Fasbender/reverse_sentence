@@ -1,6 +1,8 @@
-require 'minitest/autorun'
-require 'minitest/reporters'
-require_relative '../lib/reverse_sentence'
+gem "minitest", ">= 5.0.0"
+require "minitest/autorun"
+require "minitest/reporters"
+require "minitest/pride"
+require_relative "../lib/reverse_sentence"
 
 describe "reverse sentence" do
   describe "basic tests" do
